@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Karma' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+    <title>La Redoute - Secretárias</title>
+    <script async src="./node_modules/unpkg.com_es-module-shims@1.8.0_dist_es-module-shims.js"></script>
+    <script type="importmap">
+    {
+    "imports": {
+        "three": "./node_modules/three/build/three.module.js",
+        "three/addons/": "./node_modules/three/examples/jsm/"
+    }
+    }
+</script>
+    <script type="module" src="main.js">
+    </script>
+</head>
+
+<body>
+    <div class="navbar-container">
+        <div class="searchbox">
+            <input type="text" class="search-content" placeholder="O que procura ?">
+            <div class="search-icon-placeholder">
+                <a href="#" class="material-symbols-outlined">
+                    search
+                </a>
+            </div>
+        </div>
+        <div class="user-icon-container">
+            <a href="#" class="user-icon">
+                <img class="icon" src="imagens/user.svg" alt="user">
+            </a>
+        </div>
+        <a href="index.html">
+            <img style="width: 166px; height: 167px; left: 53px; top: 22px; position: absolute"
+                src="imagens/logo_laredoute.png" />
+        </a>
+        <div class="cart-icon-container">
+            <a href="#" class="material-symbols-outlined icon">
+                shopping_cart
+            </a>
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="interface3d-container">
+            <div id="myCanvas" class="product-layout-placeholder" src="https://via.placeholder.com/657x312"></div>
+            <div class="opt-select-box">
+                <button id="branco" class="button-rounded slct">
+                    <div class="rounded-opt selected" style="background: white;"></div>
+                </button>
+                <button id="amarelo" class="button-rounded">
+                    <div class="rounded-opt" style="background: #DB924F;">
+                    </div>
+                </button>
+                <button id="castanho" class="button-rounded">
+                    <div class="rounded-opt" style="background: #964B00;">
+                    </div>
+                </button>
+                <button id="cinza" class="button-rounded">
+                    <div class="rounded-opt" style="background: #939393;">
+                    </div>
+                </button>
+                <button id="preto" class="button-rounded">
+                    <div class="rounded-opt" style="background: black;">
+                    </div>
+                </button>
+            </div>
+            <div class="opt-select-box-right">
+                <button id="dois" class="button-rounded slct">
+                    <div class="num-doors selected">
+                        2
+                    </div>
+                </button>
+                <button id="cinco" class="button-rounded">
+                    <div class="num-doors">
+                        5
+                    </div>
+                </button>
+                <button id="interface-info" class="button-rounded margin-btn-rounded">
+                    <span class="material-symbols-outlined info-button">
+                        question_mark
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="product-purchase-details-container">
+            <div class="Textcaminhoproduto"
+                style="left: 29px; top: 22px; position: relative; opacity: 0.80; color: black; font-size: 16px; font-family: Karma; font-weight: 300; word-wrap: break-word">
+                La Redoute / Móveis / Sala </div>
+            <div class="purchase-product-name">
+                Consola 2 gavetas, Authentic Style</div>
+            <div style="position: relative;">
+                <div class="more-info-rate">
+                    <div>
+                        <span class="material-symbols-outlined star-icon">
+                            grade
+                        </span>
+                    </div>
+                    <div class="more-info-rating">
+                        <span class="more-info-rating-text-bold">4,6
+                        </span><span class="more-info-rating-text">/5</span>
+                    </div>
+
+                    <div>
+                        <a href="#" class="num-aval">
+                            112 avaliações</a>
+                    </div>
+                </div>
+            </div>
+            <div class="customization-box">
+                <div class="customization-box-title">
+                    Personalisação
+                </div>
+                <div class="customize-box">
+                    <div class="custom-color-container">
+                    </div>
+                    <div class="custom-setting-title">
+                        Branco
+                    </div>
+                    <div class="custom-setting-text">
+                        | Cor
+                    </div>
+                </div>
+                <div class="customize-box">
+                    <img src="model/materials/wood.jpg" class="custom-material-container">
+                    <div class="custom-setting-title">
+                        Madeira Carvalho
+                    </div>
+                    <div class="custom-setting-text">
+                        | Material
+                    </div>
+                </div>
+            </div>
+            <div class="customize-box purchase-box-margin">
+                <div class="product-price-tag">
+                    172,99€
+                </div>
+                <span class="material-symbols-outlined purchase-icons">
+                    favorite
+                </span>
+            </div>
+            <div class="product-counter-container purchase-box-margin">
+                <div class="counter-text">
+                    -&nbsp; 1 &nbsp;+</div>
+            </div>
+            <div class="add-to-cart-container purchase-box-margin">
+                <div class="customization-box-title add-cart-appends">
+                    Adicionar ao carrinho
+                </div>
+                <span class="material-symbols-outlined purchase-icons cart-button-appends">
+                    add_shopping_cart
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="product-details-container">
+        <div class="description-container">
+            <div class="description-title">
+                Consola 2 gavetas, Authentic Style
+            </div>
+            <div class="description-text">
+                Prático e elegante ao mesmo tempo, este suporte de TV clássico está destinado a encaixar bem numa
+                ampla gama de estilos de decoração. Feito de MDF durável, a peça apresenta um aspeto natural de
+                madeira que, juntamente com a base de metal, introduz um toque industrial em qualquer ambiente. O
+                sistema de gestão de cabos permite esconder todos os fios da vista, enquanto os gabinetes espaçosos
+                ajudam na organização do seu espaço de estar.
+            </div>
+        </div>
+        <div class="size-container">
+            <span class="product-details-container-item-title">Dimensões<br /></span><span
+                class="product-details-container-item-text">Altura:
+                47 cm<br />Largura: 140 cm<br />Profundidade: 41 cm<br />A oferta inclui<br /></span><span
+                class="product-details-container-item-text">1
+                x Móvel de TV</span>
+        </div>
+        <div class="product-offer"><span class="product-details-container-item-title">A
+                oferta inclui<br /></span><span class="product-details-container-item-text">1
+                x Móvel de TV</span>
+        </div>
+        <div class="product-main-details">
+            <span class="product-details-container-item-title">
+                Características
+                principais<br />
+            </span>
+            <span class="product-details-container-item-text">
+                Ideal
+                para todo o tipo de espaço interior<br />Extraordinariamente fácil de cuidar<br />Prateleira
+                funcional, perfeita para colocar objetos decorativos<br />Com espaço para fácil passagem dos
+                cabos<br />Base estável e resistente<br />Acabamento tipo madeira para uma aparência natural
+            </span>
+        </div>
+        <div class="info-about-product">
+            <span class="product-details-container-item-title">
+                Detalhes<br />
+            </span>
+            <span class="product-details-container-item-text">
+                Artigo
+                número: 279575-182655<br />Duração da Garantia: 24 Meses<br />Tipo: Móvel de TV<br />Cor: Cinzento
+                Castanho escuro<br />Material principal: MDF<br />Materiais adicionais: Metal<br />Acabamento:
+                Folheado<br />Peso: 25 kg<br />Peso máximo suportado (prateleira): 15 kg<br />Peso máximo suportado
+                (topo): 45 kg<br />Número de prateleiras: 1<br />Montagem: Necessita de montagem
+                completa<br />Mecanismo de abertura: Convenciona
+            </span>
+        </div>
+    </div>
+    <div class="more-info">
+        <div class="info-content">
+            <div class="more-info-title">
+                Manual do utilizador
+            </div>
+            <a href="#" class="more-info-text">
+                manualDescricaoMovel34652.pdf
+            </a>
+        </div>
+        <div class="info-content">
+            <div class="more-info-title">
+                Avaliações
+            </div>
+            <div class="more-info-rate">
+                <div>
+                    <span class="material-symbols-outlined star-icon">
+                        grade
+                    </span>
+                </div>
+                <div class="more-info-rating">
+                    <span class="more-info-rating-text-bold">
+                        4,6
+                    </span>
+                    <span class="more-info-rating-text">
+                        /5
+                    </span>
+                </div>
+
+                <div>
+                    <a href="#" class="num-aval">
+                        112 avaliações</a>
+                </div>
+            </div>
+        </div>
+        <div class="info-content">
+            <div class="more-info-title">
+                Serviços</div>
+            <a href="#" class="more-info-text">
+                Entregas</a>
+        </div>
+    </div>
+    <div class="other-products">
+        <div class="product-details-container-item-title append-title">
+            Produtos Semelhantes
+        </div>
+        <div class="Products">
+            <div class="products-background">
+                <div id="main-div" style="margin: 100px 0px; position: relative;">
+                    <div class="product">
+                        <a href="#">
+                            <div class="product-image-placeholder product-child">
+                                <img class="product-image" src="imagens/mesa(6).png" />
+                            </div>
+                            <div class="description product-child">
+                                <div class="description-box"></div>
+                                <div class="product-description-background"></div>
+                                <div class="la-redoute-tag">LA REDOUTE INTERIEURS</div>
+                                <div class="product-description">Secretária com 3 portas em carvalho</div>
+                                <div class="price-tag">316,99 €</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <div class="product-image-placeholder product-child">
+                                <img class="product-image" src="imagens/mesa(6).png" />
+                            </div>
+                            <div class="description product-child">
+                                <div class="description-box"></div>
+                                <div class="product-description-background"></div>
+                                <div class="la-redoute-tag">LA REDOUTE INTERIEURS</div>
+                                <div class="product-description">Secretária em carvalho</div>
+                                <div class="price-tag">236,93 €</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <div class="product-image-placeholder product-child">
+                                <img class="product-image" src="imagens/mesa(7).png" />
+                            </div>
+                            <div class="description product-child">
+                                <div class="description-box"></div>
+                                <div class="product-description-background"></div>
+                                <div class="la-redoute-tag">LA REDOUTE INTERIEURS</div>
+                                <div class="product-description">Secretária com 2 gavetas, em choupo</div>
+                                <div class="price-tag">188,26 €</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="page-footer-container">
+        <div class="footer-grey-background">
+            <img class="footer-image-grey-background" src="imagens/grey-footer.png" />
+        </div>
+        <div class="footer-black-background">
+            <img class="footer-image-black-background" src="imagens/black-footer.png" />
+        </div>
+    </div>
+    <script>
+
+    </script>
+
+</body>
+
+</html>
